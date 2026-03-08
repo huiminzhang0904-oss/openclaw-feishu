@@ -1,0 +1,16 @@
+{
+  "channels": {
+    "feishu": {
+      "enabled": true,
+      "accounts": {
+        "main": {
+          "appId": "cli_a9268b03a638dcb5",
+          "appSecret": "MFpglGLV5XGlZOLAWfOYXfEDBFDknUhL"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "mode": "remote"
+  }
+}
