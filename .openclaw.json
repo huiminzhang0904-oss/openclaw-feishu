@@ -1,4 +1,36 @@
 {
+  "auth": {
+    "profiles": {
+      "minimax:default": {
+        "provider": "minimax",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "http://127.0.0.1:8766",
+        "apiKey": "sk-api-0g4JOWtV7nDILxAVtnO_WylxOh3WZUWfsqK2qyYK3vt1TKESLjA6Vph8zDMdDStHjnmzIz5x8IFUVW_fy46L8MKjw4Z2k4f9z8a2tyWEa5i3AHbbw7GdUUU",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "auto",
+            "name": "Auto Model"
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax/auto"
+      },
+      "workspace": "/workspace"
+    }
+  },
   "channels": {
     "feishu": {
       "enabled": true,
@@ -11,6 +43,7 @@
     }
   },
   "gateway": {
-    "mode": "remote"
+    "mode": "remote",
+    "port": 18789
   }
 }
